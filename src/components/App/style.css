@@ -1,5 +1,17 @@
+@import url('https://fonts.googleapis.com/css?family=Aref+Ruqaa');
+
+body {
+  background-color: #2b3e51;
+}
+
 .App {
   text-align: center;
+}
+
+.App-headline {
+  font-family: 'Aref Ruqaa', serif;
+  font-size: 78px;
+  font-weight: 400;
 }
 
 .App-logo {
@@ -8,7 +20,6 @@
 }
 
 .App-header {
-  background-color: #222;
   height: 150px;
   padding: 20px;
   color: white;

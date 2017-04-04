@@ -56,3 +56,13 @@
   margin-top: 0px;
   width: 100%;
 }
+
+.form-signup-link {
+  color: #616161;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 14px;
+
+  position: absolute;
+  bottom: -40px;
+  left: 0;
+}

@@ -3,19 +3,17 @@ import React, { Component } from 'react'
 
 import './style.css'
 
-import Login from '../Login'
+import Singin from '../Signin'
 
-class App extends Component {
+export default class App extends Component {
   render() {
     return (
       <div className="App">
         <div className="App-header">
           <h2 className="App-headline">Brian</h2>
         </div>
-        <Login />
+        <Singin />
       </div>
     );
   }
 }
-
-export default App

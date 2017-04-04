@@ -3,6 +3,16 @@ import React, {Component} from 'react'
 import './style.css'
 
 export default class Login extends Component {
+
+  componentWillMount() {
+    // check if api works
+    fetch('/api', {
+      method: 'get'
+    })
+    .then(res => res.json())
+    .then(res => console.log(res))
+  }
+
   render() {
     return (
       <div>

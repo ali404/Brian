@@ -45,7 +45,7 @@ export default class Signin extends Component {
             onClick={this._signin}
           >
             <img src={googleButton} alt="google logo" />
-            Signin with Google
+            Sign in with Google
           </button>
           <button
             id="facebook-signin"
@@ -53,7 +53,7 @@ export default class Signin extends Component {
             onClick={this._signinWithFacebook}
           >
             <img src={facebookButton} alt="facebook logo" />
-            Signin with Facebook
+            Sign in with Facebook
           </button>
           {/* <Link className="form-signup-link" to="/signup">Don't have an account? Click here</Link> */}
         </div>

@@ -4,6 +4,9 @@ import './style.css'
 
 import * as firebase from 'firebase'
 
+import googleButton from './google_signin.svg'
+import facebookButton from './facebook_signin.svg'
+
 export default class Signin extends Component {
 
   componentWillMount() {
@@ -15,7 +18,7 @@ export default class Signin extends Component {
     .then(res => console.log(res))
   }
 
-  _signin() {
+  _signinWithGoogle() {
     var provider = new firebase.auth.GoogleAuthProvider();
 
     firebase.auth().signInWithPopup(provider).then(result => {
@@ -37,10 +40,20 @@ export default class Signin extends Component {
             <h2 className="form-headline">Signin</h2>
           </div>
           <button
-            className="form-submit"
+            id="google-signin"
+            className="form-signin"
             onClick={this._signin}
           >
+            <img src={googleButton} alt="google logo" />
             Signin with Google
+          </button>
+          <button
+            id="facebook-signin"
+            className="form-signin"
+            onClick={this._signinWithFacebook}
+          >
+            <img src={facebookButton} alt="facebook logo" />
+            Signin with Facebook
           </button>
           {/* <Link className="form-signup-link" to="/signup">Don't have an account? Click here</Link> */}
         </div>

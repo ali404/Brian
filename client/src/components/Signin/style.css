@@ -8,7 +8,7 @@
   margin-top: 60px;
   margin-left: auto;
   margin-right: auto;
-  padding: 30px 20px 70px 30px;
+  padding: 30px 30px 40px 30px;
   position: relative;
   width: 360px;
 }
@@ -16,7 +16,7 @@
 .form-headline {
   font-family: 'Source Sans Pro', sans-serif;
   font-size: 40px;
-  margin: 10px 0 40px 0;
+  margin: 10px 0 60px 0;
   text-align: left;
   color: #424242;
 }
@@ -65,4 +65,53 @@
   position: absolute;
   bottom: -40px;
   left: 0;
+}
+
+.form-signin {
+  border: none;
+  box-shadow: 0 0 2px 0 rgba(0, 0, 0, 0.12), 0 2px 2px 0 rgba(0, 0, 0, 0.24);
+  background-color: #fff;
+  border-radius: 2px;
+  font-size: 16px;
+  font-family: 'Source Sans Pro', sans-serif;
+  color: rgba(0, 0, 0, 0.54);
+  text-align: left;
+  width: 100%;
+  margin-bottom: 20px;
+  height: 50px;
+  padding-left: 60px;
+  position: relative;
+  transition: all 0.1s ease-in;
+}
+
+.form-signin:hover {
+  cursor: pointer;
+  background-color: #eee;
+}
+
+.form-signin img {
+  position: absolute;
+}
+
+.form-signin#google-signin img {
+  width: 24px;
+  height: 24px;
+  left: 18px;
+  top: 14px;
+}
+
+.form-signin#facebook-signin {
+  background-color: #2553B4;
+  color: #fff;
+}
+
+.form-signin#facebook-signin:hover {
+  background-color: #23468E;
+}
+
+.form-signin#facebook-signin img {
+  width: 34px;
+  height: 34px;
+  bottom: 0px;
+  left: 12px;
 }

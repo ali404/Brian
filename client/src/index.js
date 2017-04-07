@@ -1,13 +1,22 @@
 import ReactDOM from 'react-dom'
-import {browserHistory} from 'react-router'
 import Routes from './routes'
-
 import './index.css'
 
-import firebaseConfig from './config/firebase'
-import * as firebase from 'firebase'
+import AuthActionCreator from './actions/authActionCreator'
 
-firebase.initializeApp(firebaseConfig)
+import firebase from 'firebase'
+import config from './config/firebase'
+
+firebase.initializeApp(config)
+
+firebase.auth().onAuthStateChanged(user => {
+  if(user) {
+    AuthActionCreator.loginUser()
+  }
+  else {
+    AuthActionCreator.logoutUser()
+  }
+})
 
 ReactDOM.render(
   Routes,

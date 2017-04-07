@@ -2,33 +2,27 @@ import React, {Component} from 'react'
 import {browserHistory} from 'react-router'
 import './style.css'
 
-import * as firebase from 'firebase'
+import firebase from 'firebase'
 
 import googleButton from './google_signin.svg'
 import facebookButton from './facebook_signin.svg'
 
 export default class Signin extends Component {
 
-  componentWillMount() {
-    // check if api works
-    fetch('/api', {
-      method: 'get'
-    })
-    .then(res => res.json())
-    .then(res => console.log(res))
+  _signInWithGoogle = () => {
+    const provider = new firebase.auth.GoogleAuthProvider()
+    this._signInWithProvider(provider)
   }
 
-  _signinWithGoogle() {
-    var provider = new firebase.auth.GoogleAuthProvider();
+  _signInWithFacebook = () => {
+    const provider = new firebase.auth.FacebookAuthProvider()
+    this._signInWithProvider(provider)
+  }
 
-    firebase.auth().signInWithPopup(provider).then(result => {
-      browserHistory.push('/profile')
-    })
+  _signInWithProvider(provider) {
+    firebase.auth().signInWithPopup(provider)
     .catch(error => {
-      // var errorCode = error.code
-      // var errorMessage = error.message
-      // var email = error.email
-      // var credential = error.credential
+      console.log(error)
     })
   }
 
@@ -42,7 +36,7 @@ export default class Signin extends Component {
           <button
             id="google-signin"
             className="form-signin"
-            onClick={this._signin}
+            onClick={this._signInWithGoogle}
           >
             <img src={googleButton} alt="google logo" />
             Sign in with Google
@@ -50,7 +44,7 @@ export default class Signin extends Component {
           <button
             id="facebook-signin"
             className="form-signin"
-            onClick={this._signinWithFacebook}
+            onClick={this._signInWithFacebook}
           >
             <img src={facebookButton} alt="facebook logo" />
             Sign in with Facebook

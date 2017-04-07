@@ -1,0 +1,27 @@
+.logout {
+  margin-top: 40px;
+}
+
+.logout::after, .logout::before {
+  content: ' ';
+  display: table;
+  clear: both;
+}
+
+.logout-btn {
+  float: right;
+  background-color: transparent;
+  border: none;
+  font-size: 14px;
+  text-transform: uppercase;
+  font-family: 'Roboto', serif;
+  color: #212121;
+  font-weight: 400;
+  padding: 8px 8px;
+  border-radius: 2px;
+}
+
+.logout-btn:hover {
+  background-color: rgba(0, 0, 0, 0.05);
+  cursor: pointer;
+}

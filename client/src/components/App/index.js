@@ -4,6 +4,8 @@ import './style.css'
 import AuthStore from '../../stores/authStore'
 import Signin from '../Signin'
 import Profile from '../Profile'
+import SubscriptionViewer from '../SubscriptionViewer'
+import Logout from '../Logout'
 
 export default class App extends Component {
   constructor() {
@@ -35,10 +37,20 @@ export default class App extends Component {
     )
 
     if(this.state.authenticated === true) {
-      component = <Profile />
+      component = (
+        <div className="App-content">
+          <Profile />
+          <SubscriptionViewer />
+          <Logout />
+        </div>
+      )
     }
     else if(this.state.authenticated === false) {
-      component = <Signin />
+      component = (
+        <div className="App-signin">
+          <Signin />
+        </div>
+      )
     }
 
     return (

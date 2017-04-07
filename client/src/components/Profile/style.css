@@ -1,0 +1,47 @@
+.profile {
+  margin-bottom: 30px;
+}
+
+.profile-headline {
+  font-size: 12px;
+  font-family: 'Roboto', serif;
+  font-weight: 600;
+  color: #757575;
+  margin-bottom: 12px;
+  text-transform: uppercase;
+}
+
+.profile::after, .profile::before {
+  content: ' ';
+  display: table;
+  clear: both;
+}
+
+.profile-image {
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  border: 1px solid #E0E0E0;
+  float: left;
+}
+
+.profile-details {
+  font-family: 'Roboto', serif;
+  font-weight: 500;
+  color: #212121;
+  float: left;
+  padding-left: 10px;
+  margin-top: 8px;
+}
+
+.profile-details--name {
+  font-size: 16px;
+  margin: 0;
+}
+
+.profile-details--email {
+  margin: 0;
+  font-size: 12px;
+  font-weight: 400;
+  margin-top: 8px;
+}

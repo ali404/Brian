@@ -1,71 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro');
-@import url('https://fonts.googleapis.com/css?family=Lato');
-
-.form {
-  background-color: #f5f5f5;
-  border-radius: 2px;
-  box-shadow: 0 -2px 20px rgba(0, 0, 0, 0.15);
-  margin-top: 60px;
-  margin-left: auto;
-  margin-right: auto;
-  padding: 30px 30px 40px 30px;
-  position: relative;
-  width: 360px;
-}
-
-.form-headline {
-  font-family: 'Source Sans Pro', sans-serif;
-  font-size: 40px;
-  margin: 10px 0 60px 0;
-  text-align: left;
-  color: #424242;
-}
-
-.form-input {
-  border: 0;
-  background-color: #f5f5f5;
-  box-sizing: border-box;
-  color: #616161;
-  display: block;
-  font-family: 'Lato', sans-serif;
-  font-size: 16px;
-  padding: 8px 16px 8px 0px;
-  margin-bottom: 24px;
-  width: 100%;
-}
-
-.form-input:focus {
-  outline: none;
-}
-
-.form-submit {
-  background-color: #2196F3;
-  border-width: 0;
-  border-bottom-right-radius: 2px;
-  border-bottom-left-radius: 2px;
-  bottom: 0;
-  color: #f5f5f5;
-  display: block;
-  font-size: 16px;
-  font-family: 'Lato', sans-serif;
-  padding: 16px 24px;
-  position: absolute;
-  text-align: left;
-  transition: all 0.3s ease;
-  left: 0;
-  margin-top: 0px;
-  width: 100%;
-}
-
-.form-signup-link {
-  color: #616161;
-  font-family: 'Source Sans Pro', sans-serif;
-  font-size: 14px;
-
-  position: absolute;
-  bottom: -40px;
-  left: 0;
-}
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,500');
 
 .form-signin {
   border: none;
@@ -73,13 +6,12 @@
   background-color: #fff;
   border-radius: 2px;
   font-size: 16px;
-  font-family: 'Source Sans Pro', sans-serif;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
   color: rgba(0, 0, 0, 0.54);
   text-align: left;
-  width: 100%;
-  margin-bottom: 20px;
   height: 50px;
-  padding-left: 60px;
+  padding: 0 16px 0 52px;
   position: relative;
   transition: all 0.1s ease-in;
 }
@@ -94,24 +26,8 @@
 }
 
 .form-signin#google-signin img {
-  width: 24px;
-  height: 24px;
-  left: 18px;
-  top: 14px;
-}
-
-.form-signin#facebook-signin {
-  background-color: #2553B4;
-  color: #fff;
-}
-
-.form-signin#facebook-signin:hover {
-  background-color: #23468E;
-}
-
-.form-signin#facebook-signin img {
-  width: 34px;
-  height: 34px;
-  bottom: 0px;
-  left: 12px;
+  width: 20px;
+  height: 20px;
+  left: 16px;
+  top: 15px;
 }

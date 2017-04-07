@@ -44,6 +44,9 @@ authStore.dispatchToken = AppDispatcher.register(payload => {
       authStore.logoutUser()
       authStore.emitChange()
     break
+
+    default:
+    break
   }
 })
 

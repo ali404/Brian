@@ -1,0 +1,15 @@
+.subscription-headline {
+  font-size: 12px;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-family: 'Roboto';
+  margin-bottom: 12px;
+  color: #757575;
+}
+
+.subscription-viewer {
+  font-family: 'Roboto';
+  font-size: 16px;
+  color: #212121;
+  margin: 0;
+}

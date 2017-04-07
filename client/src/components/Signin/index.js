@@ -14,11 +14,6 @@ export default class Signin extends Component {
     this._signInWithProvider(provider)
   }
 
-  _signInWithFacebook = () => {
-    const provider = new firebase.auth.FacebookAuthProvider()
-    this._signInWithProvider(provider)
-  }
-
   _signInWithProvider(provider) {
     firebase.auth().signInWithPopup(provider)
     .catch(error => {
@@ -40,14 +35,6 @@ export default class Signin extends Component {
           >
             <img src={googleButton} alt="google logo" />
             Sign in with Google
-          </button>
-          <button
-            id="facebook-signin"
-            className="form-signin"
-            onClick={this._signInWithFacebook}
-          >
-            <img src={facebookButton} alt="facebook logo" />
-            Sign in with Facebook
           </button>
           {/* <Link className="form-signup-link" to="/signup">Don't have an account? Click here</Link> */}
         </div>

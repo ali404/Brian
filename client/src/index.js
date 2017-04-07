@@ -4,12 +4,9 @@ import './index.css'
 
 import AuthActionCreator from './actions/authActionCreator'
 
-import firebase from 'firebase'
-import config from './config/firebase'
+import {firebaseApp} from './constants'
 
-firebase.initializeApp(config)
-
-firebase.auth().onAuthStateChanged(user => {
+firebaseApp.auth().onAuthStateChanged(user => {
   if(user) {
     AuthActionCreator.loginUser()
   }

@@ -1,4 +1,8 @@
 import keyMirror from 'keymirror'
+import * as firebase from 'firebase'
+import config from '../config/firebase'
+
+let app = firebase.initializeApp(config)
 
 const AuthConstants = keyMirror({
   LOGIN_USER: null,
@@ -6,5 +10,7 @@ const AuthConstants = keyMirror({
 })
 
 export {
-  AuthConstants
+  AuthConstants,
+  app as firebaseApp,
+  firebase
 }

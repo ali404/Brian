@@ -1,11 +1,11 @@
 import React, {Component} from 'react'
-import firebase from 'firebase'
 
+import {firebaseApp} from '../../constants'
 import './style.css'
 
 export default class Logout extends Component {
   _logoutUser = () => {
-    firebase.auth().signOut()
+    firebaseApp.auth().signOut()
     .catch(error => {
       console.log(error)
     })

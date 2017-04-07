@@ -1,19 +1,19 @@
 import React, {Component} from 'react'
 
-import firebase from 'firebase'
+import {firebaseApp} from '../../constants'
 import './style.css'
 
 export default class Profile extends Component {
   constructor() {
     super()
-    const user = firebase.auth().currentUser;
+    const user = firebaseApp.auth().currentUser;
     this.user = {
       name: user.displayName,
       email: user.email,
       photoUrl: user.photoURL
     }
   }
-  
+
   render() {
     return (
       <div className="profile">

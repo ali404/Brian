@@ -1,7 +1,7 @@
 import React, {Component} from 'react'
 import './style.css'
 
-import firebase from 'firebase'
+import {firebase, firebaseApp} from '../../constants'
 
 import googleButton from './google_signin.svg'
 
@@ -13,7 +13,7 @@ export default class Signin extends Component {
   }
 
   _signInWithProvider(provider) {
-    firebase.auth().signInWithPopup(provider)
+    firebaseApp.auth().signInWithPopup(provider)
     .catch(error => {
       console.log(error)
     })

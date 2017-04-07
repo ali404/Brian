@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import './style.css'
+import '../Logout/style.css'
 
 import AuthStore from '../../stores/authStore'
 import Signin from '../Signin'

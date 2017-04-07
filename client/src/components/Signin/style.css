@@ -21,6 +21,10 @@
   background-color: #eee;
 }
 
+.form-signin:focus {
+  outline: none;
+}
+
 .form-signin img {
   position: absolute;
 }

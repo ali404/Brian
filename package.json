@@ -7,9 +7,6 @@
     "server": "cd server && node server.js",
     "client": "cd client && npm start"
   },
-  "devDependencies": {
-    "concurrently": "^3.4.0"
-  },
   "dependencies": {
     "concurrently": "^3.4.0"
   }

@@ -5,7 +5,7 @@ import '../Logout/style.css'
 import AuthStore from '../../stores/authStore'
 import Signin from '../Signin'
 import Profile from '../Profile'
-import SubscriptionViewer from '../SubscriptionViewer'
+import HubsViewer from '../HubsViewer'
 import Logout from '../Logout'
 
 export default class App extends Component {
@@ -41,7 +41,7 @@ export default class App extends Component {
       component = (
         <div className="App-content">
           <Profile />
-          <SubscriptionViewer />
+          <HubsViewer />
           <Logout />
         </div>
       )

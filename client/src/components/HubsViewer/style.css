@@ -1,4 +1,4 @@
-.subscription-headline {
+.hubs-headline {
   font-size: 12px;
   text-transform: uppercase;
   font-weight: 600;
@@ -7,7 +7,7 @@
   color: #757575;
 }
 
-.subscription-viewer {
+.hubs-viewer {
   font-family: 'Roboto';
   font-size: 16px;
   color: #212121;
